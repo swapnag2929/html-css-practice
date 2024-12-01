@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page layout using DIV element</title>
+    <style>
+         .header{
+            background-color: red;
+            height: 50px;
+           
+            margin-bottom: 2px;
+            /* text-align:; */
+        }
+        .left{
+            background-color: yellow;
+            /* position: relative; */
+            
+        }
+        .main{
+            background-color: green;
+        }
+        .right{
+            background-color: #2ad20c;
+            ;
+        }
+        .footer{
+            background-color: grey;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,3fr);
+            grid-template-rows: repeat(1,250px);
+            gap: 2px;
+            
+            
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">Header</div>
+    <div class="container">
+    <div class="left">Left content</div>
+    <div class="main">Main Content</div>
+    <div class="right">Right Content</div>
+    
+</div>
+<div class="footer" style="grid-column: 300px; margin-top: 2px; height: 50px;">Footer</div>
+    
+</body>
+</html>
